@@ -1,5 +1,8 @@
-.buildguides {
+body {
     background-color: var(--secondary);
+}
+
+.buildguides {
     overflow: hidden;
     box-sizing: border-box;
     padding: 2rem;
@@ -31,16 +34,22 @@ h4 {
     margin-top: 0;
 }
 
-.guidebuild {
-    background-color: var(--tertiary);
-    min-width: 15rem;
-    padding: 1rem;
-}
-
 .builds {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     overflow: auto;
     gap: 1.6rem;
     margin-bottom: 1rem;
+}
+
+.guidebuild {
+    background-color: var(--tertiary);
+    min-width: 15rem;
+    padding: 1rem;
+    transition: 200ms;
+}
+
+.guidebuild:hover {
+    cursor:pointer;
+    filter: brightness(85%);
 }

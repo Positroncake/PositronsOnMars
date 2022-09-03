@@ -9,6 +9,7 @@
     --error: #ff3547;
     --info: #33b5e5;
 
+    --card: #19573e;
 
     --primary: #194936;
     --secondary: #1e6649;
@@ -20,6 +21,8 @@
 }
 
 .darkmode {
+    --card: #1a4333;
+
     --primary: #162e25;
     --secondary: #1f4f3c;
     --tertiary: #634629;
@@ -133,14 +136,14 @@ html {
     display: none;
 }
 
-.success {
+.s {
     color: var(--success);
 }
 
-.warning {
+.w {
     color: var(--warning);
 }
 
-.error {
+.e {
     color: var(--error);
 }
