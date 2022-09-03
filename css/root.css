@@ -9,7 +9,7 @@
     --error: #ff3547;
     --info: #33b5e5;
 
-    
+
     --primary: #194936;
     --secondary: #1e6649;
     --tertiary: #b18c5a;
@@ -126,4 +126,3 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
-
