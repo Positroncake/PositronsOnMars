@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    transition: 500ms;
 }
 
 .navbar w {
@@ -29,6 +30,7 @@
     float: right;
     font-size: 0.5rem;
     padding: 0.9rem;
+    margin: auto;
 }
 
 .navbar .right:hover {

@@ -8,9 +8,8 @@
     --warning: #ffbb33;
     --error: #ff3547;
     --info: #33b5e5;
-}
 
-.lightmode {
+    
     --primary: #194936;
     --secondary: #1e6649;
     --tertiary: #b18c5a;
@@ -32,4 +31,64 @@
 
 html {
     font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1rem;
+    margin: 0.75rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(83, 83, 83);
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.75rem;
+    width: 0.75rem;
+    left: 0.2rem;
+    bottom: 0.1rem;
+    background-color: var(--primary-text);
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+
+input:checked+.slider {
+    background-color: #2e2e2e;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--secondary);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(1.9rem);
+    -ms-transform: translateX(1.9rem);
+    transform: translateX(1.9rem);
+}
+
+.slider.round {
+    border-radius: 1rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
