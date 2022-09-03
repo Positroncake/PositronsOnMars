@@ -1,0 +1,94 @@
+body {
+    background-color: var(--secondary);
+}
+
+hr {
+    height: 1px;
+    background-color: #cccccc55;
+    border: none;
+}
+
+h2 {
+    margin: 0.5rem;
+    margin-left: 3rem;
+    color: var(--primary-text);
+}
+
+h2:first-child {
+    margin-top: 5rem;
+}
+
+.item-list {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    overflow: hidden;
+    gap: 1.6rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item-card {
+    margin: 0;
+    background-color: var(--secondary);
+    filter: brightness(85%);
+    min-width: 17rem;
+    transition: 200ms;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--primary);
+}
+
+.item-card:hover {
+    box-shadow: none;
+}
+
+.item-title {
+    margin: 0;
+    color: var(--primary-text);
+}
+
+.item-card .top {
+    margin: 0;
+    padding: 0.25rem;
+    background-color: var(--primary);
+    border: 0.5px solid var(--primary);
+}
+
+.item-image {
+    width: 100%;
+    height: 15rem;
+}
+
+.item-name {
+    margin-bottom: 0.25rem;
+    padding: 0.25rem;
+    color: var(--primary-text);
+}
+
+.item-description {
+    margin-top: 0;
+    padding: 0.25rem;
+    color: var(--secondary-text);
+}
+
+.item-price {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    padding: 0.25rem;
+    color: var(--primary-text);
+}
+
+.rbutton {
+    border: none;
+    background-color: white;
+    color: var(--btn-idl);
+    min-width: 17rem;
+}
+
+.rbutton:hover {
+    background-color: var(--btn-hvr);
+    color: var(--primary-text);
+}
+
+.rbutton:active {
+    background-color: var(--btn-clk);
+}
