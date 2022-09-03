@@ -36,6 +36,12 @@ html {
 
 body {
     margin: 0;
+    transition: 200ms;
+}
+
+main {
+    margin-top: 2rem;
+    gap: 0px;
 }
 
 .switch {
@@ -125,4 +131,16 @@ html {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.success {
+    color: var(--success);
+}
+
+.warning {
+    color: var(--warning);
+}
+
+.error {
+    color: var(--error);
 }

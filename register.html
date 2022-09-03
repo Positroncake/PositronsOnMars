@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
     <div class="navbar">
-        <a class="left" href="./">Positron<w>On</w>Mars</a>
+        <a class="left" href="./home.html">Positron<w>On</w>Mars</a>
         <a class="left" href="./builder.html">PC Builder</a>
         <a class="left" href="./guide.html">Guides</a>
         <a class="left" href="./browse.html">Browse Parts</a>
@@ -24,6 +27,25 @@
             <span class="slider round"></span>
         </label>
     </div>
+    <main>
+        <div class="registerbox">
+            <h1>Register</h1>
+            <h5 class="error" id="status"></h5>
+            <h3>Username</h3>
+            <input type="text" class="input" placeholder="Username" id="user">
+            <h3>Password</h3>
+            <input type="password" class="input" placeholder="Password" id="pass">
+            <h3>Password Again</h3>
+            <input type="password" class="input" placeholder="Password" id="passveri">
+            <br>
+            <input type="button" class="button" value="Register" onclick="register()">
+            <hr>
+            <a href="./login.html"><input type="button" class="button rbutton" value="Login here"></a>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/themechanger.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
 </body>
 
 </html>
