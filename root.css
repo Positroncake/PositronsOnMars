@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-text: #FFF;
+    --tertiary-text: #ffe683;
+
+    --success: #00c851;
+    --warning: #ffbb33;
+    --error: #ff3547;
+    --info: #33b5e5;
+}
+
+.lightmode {
+    --primary: #194936;
+    --secondary: #1e6649;
+    --tertiary: #b18c5a;
+    --btn-idl: #2c87c3;
+    --btn-hvr: #1e5c85;
+    --btn-clk: #153f5b;
+    --secondary-text: #000;
+}
+
+.darkmode {
+    --primary: #162e25;
+    --secondary: #1f4f3c;
+    --tertiary: #634629;
+    --btn-idl: #2b86de;
+    --btn-hvr: #195fa3;
+    --btn-clk: #134677;
+    --secondary-text: #FFF;
+}
+
+html {
+    font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+}
