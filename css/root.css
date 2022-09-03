@@ -31,6 +31,11 @@
 
 html {
     font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+    padding: none;
+}
+
+body {
+    margin: 0;
 }
 
 .switch {
@@ -92,3 +97,33 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.button {
+    font-weight: bold;
+    color: var(--primary-text);
+    background-color: var(--btn-idl);
+    border: 0.1rem solid var(--btn-idl);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    transition: 200ms;
+}
+
+.button:hover {
+    border: 0.1rem solid var(--btn-hvr);
+    background-color: var(--btn-hvr);
+}
+
+.button:active {
+    border: 0.1rem solid var(--btn-idl);
+    background-color: var(--btn-clk);
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+

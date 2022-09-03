@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Name</title>
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
     <div class="navbar">
         <a class="left" href="./">Positron<w>On</w>Mars</a>
@@ -22,10 +25,45 @@
         <label class="switch themetoggler">
             <input type="checkbox">
             <span class="slider round"></span>
-          </label>
+        </label>
     </div>
 
-    <script type="text/javascript" src="themechanger.js"></script>
+    <main>
+        <div class="buildguides">
+            <h2>Build Guides</h2>
+            <h3>Building your own PC and need ideas on where to get started? Explore our build guides which cover systems for a variety of use-cases and budgets.</h3>
+
+            <div class="builds">
+                <div class="guidebuild">
+                    <h4>Name of Build Guide</h4>
+                    <h5>Description of Build Guide</h5>
+                    <h4>$100.99</h4>
+                    <h4>50</h4>
+                    <img src="" alt="Build Image Here">
+                </div>
+                <div class="guidebuild">
+                    <h4>Name of Build Guide</h4>
+                    <h5>Description of Build Guide</h5>
+                    <h4>$100.99</h4>
+                    <h4>50</h4>
+                    <img src="" alt="Build Image Here">
+                </div>
+                <div class="guidebuild">
+                    <h4>Name of Build Guide</h4>
+                    <h5>Description of Build Guide</h5>
+                    <h4>$100.99</h4>
+                    <h4>50</h4>
+                    <img src="" alt="Build Image Here">
+                </div>
+            </div>
+
+            <input type="button" class="button" value="aaaa" onclick="viewBuildGuides()">
+
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/themechanger.js"></script>
 
 </body>
+
 </html>

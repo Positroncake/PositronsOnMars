@@ -1,0 +1,51 @@
+main {
+    margin-top: 2rem;
+    gap: 0px;
+    height: 1000px;
+}
+
+.buildguides {
+    background-color: var(--secondary);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.buildguides:last-child {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 100;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+h2, h3 {
+    margin-top: 0;
+    color: var(--primary-text);
+}
+
+h4 {
+    margin-top: 0;
+}
+
+.guidebuild {
+    background-color: var(--tertiary);
+    min-width: 15rem;
+    padding: 1rem;
+}
+
+.builds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
+    gap: 1.6rem;
+    margin-bottom: 1rem;
+}
