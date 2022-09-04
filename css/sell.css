@@ -1,0 +1,83 @@
+body {
+    background-color: var(--secondary);
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+main {
+    width: 66%;
+    margin: auto;
+}
+
+h4 {
+    color: var(--primary-text);
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: var(--add-btn);
+    transition: 200ms;
+    padding: 0;
+}
+
+.dropbtn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--btn-idl);
+    font-weight: bold;
+    color: var(--primary-text);
+    margin: 0;
+    width: 100%;
+}
+
+.dropbtn:hover {
+    cursor: context-menu;
+    background-color: var(--btn-hvr);
+}
+
+.dropdown-content .item {
+    background-color: transparent;
+    color: #000;
+    transition: 200ms;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-content .item:hover {
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.section {
+    background-color: var(--primary);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--primary);
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+.section:hover {
+    box-shadow: none;
+}
+
+.userinput {
+    width: 100%;
+    border: 1px solid #000;
+    outline: none;
+    max-width: 100%;
+    transition: 200ms;
+}
+
+.userinput:hover {
+    padding: 0.3rem;
+}

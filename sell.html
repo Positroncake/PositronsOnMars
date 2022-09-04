@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sell.css">
 </head>
 
 <body>
@@ -24,6 +27,61 @@
             <span class="slider round"></span>
         </label>
     </div>
+
+    <main>
+        <div class="section">
+            <h4>Title:</h4>
+            <textarea maxlength="50" class="userinput" id="title"></textarea>
+        </div>
+
+        <div class="section">
+            <h4>Category:</h4>
+            <div class="dropdown">
+                <button class="dropbtn">Choose Category</button>
+                <div class="dropdown-content">
+                    <a class="item" onclick="choose('CPU')">CPU</a>
+                    <a class="item" onclick="choose('GPU')">GPU</a>
+                    <a class="item" onclick="choose('PSU')">PSU</a>
+                    <a class="item" onclick="choose('Motherboard')">Motherboard</a>
+                    <a class="item" onclick="choose('RAM')">RAM</a>
+                    <a class="item" onclick="choose('Storage')">Storage</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h4>Condition:</h4>
+            <div class="dropdown">
+                <button class="dropbtn">Choose Condition</button>
+                <div class="dropdown-content">
+                    <a class="item" onclick="chooseCond('New')">New</a>
+                    <a class="item" onclick="choose('Used - Like New')">Used - Like new</a>
+                    <a class="item" onclick="choose('Used - Good')">Used - Good</a>
+                    <a class="item" onclick="choose('Used - Fair')">Used - Fair</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h4>Description:</h4>
+            <textarea maxlength="500" class="userinput" id="description"></textarea>
+        </div>
+
+        <div class="section">
+            <h4>Price:</h4>
+            <input class="userinput" type="number" id="price">
+        </div>
+        
+        <div class="section">
+            <h4>Media:</h4>
+            <textarea class="userinput" id="description"></textarea>
+        </div>
+
+        <div class="section">
+            <h4>Youtube:</h4>
+            <input class="userinput" type="url" id="youtube" placeholder="https://youtube/watch?v=VideoId">
+        </div>
+    </main>
 </body>
 
 </html>

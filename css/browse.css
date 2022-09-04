@@ -75,13 +75,13 @@ h2:first-child {
     padding-left: 0.5rem;
     overflow: hidden;
     font-family: sans-serif;
-  }
-  
-  .input-box .prefix {
+}
+
+.input-box .prefix {
     font-weight: 300;
     font-size: 14px;
     color: #999;
-  }
+}
 
 .list-container {
     padding-top: 2rem;
