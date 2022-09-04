@@ -46,7 +46,7 @@ function sell() {
     const token = getCookie("token");
 
     var xhr = new XMLHttpRequest();
-    var url = "http://172.105.105.74:55555/api/Accounts/Register";
+    var url = "http://172.105.105.74:55555/api/Sellers/ListNewItems";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(`

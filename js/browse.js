@@ -27,7 +27,7 @@ function searchItem() {
     status.innerHTML = 'Results for "' + search.value.substring(0,25) + (search.value.length > 25 ? '..."' : '"');
 
     var xhr = new XMLHttpRequest();
-    var url = "https://172.105.105.74:55555/api/Sellers/GetBySearch/";
+    var url = "http://172.105.105.74:55555/api/Sellers/GetBySearch";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify(`${search.value}`));
