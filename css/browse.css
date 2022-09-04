@@ -37,6 +37,10 @@ h2:first-child {
     margin-top: 2.9rem;
 }
 
+h5, h6, h7 {
+    width: 100%;
+}
+
 .search-box {
     border: none;
     outline: none;

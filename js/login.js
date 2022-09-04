@@ -20,9 +20,9 @@ function login() {
         } else if (re = "404") {
             const statusMsg = document.getElementById("status");
             statusMsg.innerHTML = `Incorrect login or password`;
-        }  else if (re = "400") {
-        const statusMsg = document.getElementById("status");
-        statusMsg.innerHTML = `An error has occured please try again later`;
-    }
+        } else if (re = "400") {
+            const statusMsg = document.getElementById("status");
+            statusMsg.innerHTML = `An error has occured please try again later`;
+        }
     }
 }
