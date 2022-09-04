@@ -6,26 +6,39 @@ hr {
     height: 1px;
     background-color: #cccccc55;
     border: none;
+    margin: 0;
 }
 
 h2 {
+    font-size: 19px;
     margin: 0.5rem;
     margin-left: 3rem;
     color: var(--primary-text);
 }
 
+h4 {
+    font-size: 17px;
+}
+
+h5 {
+    font-size: 14px;
+    transition: 200ms;
+}
+
 h2:first-child {
-    margin-top: 5rem;
+    margin-top: 2.9rem;
 }
 
 .item-list {
     margin: 2rem;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     overflow: auto;
     gap: 1.6rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .item-card {
@@ -52,33 +65,21 @@ h2:first-child {
     border: 0.5px solid var(--primary);
 }
 
-.item-image {
-    width: 100%;
-    height: 15rem;
-}
-
 .item-name {
-    margin-bottom: 0.25rem;
-    padding: 0.25rem;
+    margin: 0;
+    padding-left: 0.25rem;
     color: var(--primary-text);
 }
 
 .item-description {
-    margin-top: 0;
-    padding: 0.25rem;
+    margin: 0;
+    padding-left: 0.25rem;
     color: var(--secondary-text);
-}
-
-.item-price {
-    margin-top: 0;
-    margin-bottom: 0.25rem;
-    padding: 0.25rem;
-    color: var(--primary-text);
 }
 
 .rbutton {
     border: none;
-    background-color: white;
+    background-color: var(--add-btn);
     color: var(--btn-idl);
     min-width: 17rem;
 }

@@ -10,6 +10,7 @@
     --info: #33b5e5;
 
     --card: #19573e;
+    --add-btn: #fff;
 
     --primary: #194936;
     --secondary: #1e6649;
@@ -22,6 +23,7 @@
 
 .darkmode {
     --card: #1a4333;
+    --add-btn: #ddd;
 
     --primary: #162e25;
     --secondary: #1f4f3c;
@@ -43,7 +45,7 @@ body {
 }
 
 main {
-    margin-top: 2rem;
+    margin-top: 1rem;
     gap: 0px;
 }
 

@@ -30,7 +30,7 @@
 .navbar .right {
     float: right;
     font-size: 0.5rem;
-    padding: 0.9rem;
+    padding: 0.89rem;
     margin: auto;
 }
 
@@ -49,4 +49,8 @@
 
 .navbar .left:hover {
     background: var(--secondary);
+}
+
+.navbar .active {
+    background-color: var(--secondary);
 }

@@ -30,8 +30,20 @@ h3 {
     color: var(--primary-text);
 }
 
+h2,
+h3,
+h4,
+h5 {
+    transition: 200ms;
+}
+
 h4 {
     margin-top: 0;
+    color: var(--primary-text);
+}
+
+h5 {
+    color: var(--secondary-text);
 }
 
 .builds {
@@ -43,7 +55,8 @@ h4 {
 }
 
 .guidebuild {
-    background-color: var(--tertiary);
+    background-color: var(--card);
+    border: 5px solid var(--card);
     min-width: 15rem;
     padding: 1rem;
     transition: 200ms;
@@ -52,4 +65,8 @@ h4 {
 .guidebuild:hover {
     cursor:pointer;
     filter: brightness(85%);
+}
+
+.guidebuild.selected {
+    border: 5px solid var(--btn-idl);
 }
