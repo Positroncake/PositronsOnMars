@@ -31,20 +31,20 @@
     <main>
         <div class="section">
             <h4>Title:</h4>
-            <textarea maxlength="50" class="userinput" id="title"></textarea>
+            <textarea maxlength="100" class="userinput" id="title"></textarea>
         </div>
 
         <div class="section">
             <h4>Category:</h4>
             <div class="dropdown">
-                <button class="dropbtn">Choose Category</button>
+                <button id="cate" class="dropbtn">Choose Category</button>
                 <div class="dropdown-content">
                     <a class="item" onclick="choose('CPU')">CPU</a>
                     <a class="item" onclick="choose('GPU')">GPU</a>
                     <a class="item" onclick="choose('PSU')">PSU</a>
-                    <a class="item" onclick="choose('Motherboard')">Motherboard</a>
                     <a class="item" onclick="choose('RAM')">RAM</a>
                     <a class="item" onclick="choose('Storage')">Storage</a>
+                    <a class="item" onclick="choose('Motherboard')">Motherboard</a>
                 </div>
             </div>
         </div>
@@ -52,12 +52,13 @@
         <div class="section">
             <h4>Condition:</h4>
             <div class="dropdown">
-                <button class="dropbtn">Choose Condition</button>
+                <button id="cond" class="dropbtn">Choose Condition</button>
                 <div class="dropdown-content">
-                    <a class="item" onclick="chooseCond('New')">New</a>
-                    <a class="item" onclick="chooseCond('Used - Like New')">Used - Like new</a>
-                    <a class="item" onclick="chooseCond('Used - Good')">Used - Good</a>
-                    <a class="item" onclick="chooseCond('Used - Fair')">Used - Fair</a>
+                    <a class="item" onclick="chooseCond(1)">1</a>
+                    <a class="item" onclick="chooseCond(2)">2</a>
+                    <a class="item" onclick="chooseCond(3)">3</a>
+                    <a class="item" onclick="chooseCond(4)">4</a>
+                    <a class="item" onclick="chooseCond(5)">5</a>
                 </div>
             </div>
         </div>
@@ -68,17 +69,18 @@
         </div>
         
         <div class="section">
-            <h4>Media:</h4>
-            <textarea class="userinput" id="description"></textarea>
+            <h4>Image:</h4>
+            <textarea class="userinput" id="image"></textarea>
         </div>
 
         <div class="section">
-            <h4>Youtube:</h4>
-            <input class="userinput" type="url" id="youtube" placeholder="https://youtube/watch?v=VideoId">
+            <button class="button" onclick="sell()">Post Item</button>
         </div>
+
     </main>
 
     <script type="text/javascript" src="js/themechanger.js"></script>
+    <script type="text/javascript" src="js/sell.js"></script>
     
 </body>
 

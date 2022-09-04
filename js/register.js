@@ -18,7 +18,7 @@ function register() {
         statusMsg.outerHTML = `<h5 class="error" id="status">Password must have at least 15 characters</h5>`;
     } else {
         var xhr = new XMLHttpRequest();
-        var url = "url/api/Accounts/Register";
+        var url = "https://172.105.105.74:55555/api/Accounts/Register";
         xhr.open("POST", url, true);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify(`{"Username": "${username.value}", "Hash": "${password.value}", "salt": "", "Iterations": 0}`));

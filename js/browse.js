@@ -27,10 +27,10 @@ function searchItem() {
     status.innerHTML = 'Results for "' + search.value.substring(0,25) + (search.value.length > 25 ? '..."' : '"');
 
     var xhr = new XMLHttpRequest();
-    var url = "api/Sellers/GetBySearch/";
+    var url = "https://172.105.105.74:55555/api/Sellers/GetBySearch/";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(JSON.stringify(`{"term": "${search.value}"}`));
+    xhr.send(JSON.stringify(`${search.value}`));
     const re = xhr.responseText;
     const results = JSON.parse(re);
 
@@ -40,7 +40,7 @@ function searchItem() {
         const id = item.Id;
         const type = item.Type;
 
-        const strtype = "Unknown";
+        let strtype = "Unknown";
         if(type == 1){
             strtype = "CPU";
         } else if(type == 2){
@@ -60,7 +60,7 @@ function searchItem() {
         const image = item.Image;
         const condition = item.Condition;
 
-        const strcond = condition + " ";
+        let strcond = condition + " ";
         for(let j = 0; j < condition; j++){
             strcond += `<i style="color: gold;" class="fa fa-star"></i>`
         }

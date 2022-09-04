@@ -36,6 +36,8 @@ h4 {
 .dropbtn:hover {
     cursor: context-menu;
     background-color: var(--btn-hvr);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .dropdown-content .item {
@@ -75,9 +77,14 @@ h4 {
     border: 1px solid #000;
     outline: none;
     max-width: 100%;
+    max-height: 5rem;
     transition: 200ms;
 }
 
 .userinput:hover {
     padding: 0.3rem;
+}
+
+.button {
+    width: 100%;
 }
