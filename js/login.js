@@ -10,19 +10,19 @@ function login() {
     } else {
 
         var xhr = new XMLHttpRequest();
-        var url = "https://172.105.105.74:55555/api/Accounts/Login";
-        xhr.open("POST", url, true);
+        var url = "http://172.105.105.74:55555/api/Accounts/Login";
+        xhr.open("PUT", url, true);
         xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.send(JSON.stringify(`{"Username": "${username.value}", "Password": "${password.value}"}`));
+        xhr.send(JSON.stringify(`{"username": "${username.value}", "password": "${password.value}"}`));
         const re = xhr.responseText;
-        if (re = "200") {
+        if (re == "200") {
             setCookie("username", username.value);
             setCookie("token", blah);
             window.location.href = "./home.html";
-        } else if (re = "404") {
+        } else if (re == "404") {
             const statusMsg = document.getElementById("status");
             statusMsg.innerHTML = `Incorrect login or password`;
-        } else if (re = "400") {
+        } else if (re == "400") {
             const statusMsg = document.getElementById("status");
             statusMsg.innerHTML = `An error has occured please try again later`;
         }

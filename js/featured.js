@@ -19,3 +19,7 @@ featured3.addEventListener("click", (event) => {
     featured2.classList.remove('selected');
     featured1.classList.remove('selected');
 });
+
+function viewFeatured() {
+    window.location.href = "./builder.html";
+}
