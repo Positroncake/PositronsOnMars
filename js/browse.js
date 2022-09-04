@@ -39,10 +39,32 @@ function searchItem() {
 
         const id = item.Id;
         const type = item.Type;
+
+        const strtype = "Unknown";
+        if(type == 1){
+            strtype = "CPU";
+        } else if(type == 2){
+            strtype = "GPU";
+        } else if(type == 3){
+            strtype = "RAM";
+        } else if(type == 4){
+            strtype = "Motherboard";
+        } else if(type == 5){
+            strtype = "Storage";
+        } else if(type == 6){
+            strtype = "PSU";
+        }
+
         const name = item.Name;
         const seller = item.Seller;
         const image = item.Image;
         const condition = item.Condition;
+
+        const strcond = condition + " ";
+        for(let j = 0; j < condition; j++){
+            strcond += `<i style="color: gold;" class="fa fa-star"></i>`
+        }
+
         const price = item.Price;
 
         const card =
@@ -53,12 +75,14 @@ function searchItem() {
             </div>
             <div class="right">
                 <h5>${name}</h5>
-                <h6>${type + " - " + seller}</h6>
-                <h6>${condition}</h6>
-                <h7>${price}</h7>
+                <h6>${strtype + " - " + seller}</h6>
+                <h6>${strcond}</h6>
+                <h7>$${price}</h7>
             </div>
         </div>
         `;
-        list.innerHTML += card;
+        if (cate.includes(type)) {
+            list.innerHTML += card;
+        }
     }
 }
