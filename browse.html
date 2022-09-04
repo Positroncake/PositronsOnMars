@@ -30,17 +30,19 @@
 
     <main>
         <div class="search">
-            <input type="text" placeholder="Search" id="search" class="search-box">
+            <input type="text" placeholder="Search" id="search" class="search-box" maxlength="200">
             <button class="button" onclick="searchItem()"><i class="fa fa-search"></i></button>
             <a href="./sell.html"><button class="button sell">Sell Item</button></a>
             <hr class="split">
         </div>
         <div class="info">
-            <h4 id="results" class="results">No results</h4>
+            <h4 id="status" class="results">No results</h4>
             <div class="dropdown">
                 <button id="sortby" class="dropbtn">Sort by: Newest</button>
                 <div class="dropdown-content">
-                    <a class="item" onclick="sortBy('Newest')">Newest</a>
+                    <a class="item" onclick="sortBy('Condition low to high')">Condition low to high</a>
+                    <a class="item" onclick="sortBy('Condition high to low')">Condition high to low</a>
+                    <hr>
                     <a class="item" onclick="sortBy('Price low to high')">Price low to high</a>
                     <a class="item" onclick="sortBy('Price high to low')">Price high to low</a>
                 </div>
@@ -83,7 +85,7 @@
                         <h5>Item Name</h5>
                         <h6>Type - Seller</h6>
                         <h6>Condition <i style="color: gold;" class="fa fa-star"></i></h6>
-                        <h7>Price</h7>
+                        <h6>Price</h6>
                     </div>
                 </div>
 

@@ -25,6 +25,7 @@ h4 {
 h5 {
     font-size: 14px;
     transition: 200ms;
+    margin: 0;
 }
 
 h6 {
@@ -37,8 +38,9 @@ h2:first-child {
     margin-top: 2.9rem;
 }
 
-h5, h6, h7 {
+h5, h6 {
     width: 100%;
+    color: var(--primary-text);
 }
 
 .search-box {
@@ -47,6 +49,7 @@ h5, h6, h7 {
     padding: 0.5rem;
     transition: 200ms;
     margin: 0;
+    width: 15rem;
 }
 
 .search-box:hover {
@@ -119,6 +122,7 @@ h5, h6, h7 {
     background-color: var(--primary);
     margin-left: 0.5rem;
     transition: 200ms;
+    padding: 0.5rem;
 }
 
 .info {

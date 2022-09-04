@@ -1,6 +1,5 @@
 const sortby = document.getElementById("sortby");
 const search = document.getElementById("search");
-const results = document.getElementById("results");
 
 const list = document.getElementById("list");
 
@@ -24,7 +23,8 @@ function updateResults() {
 }
 
 function searchItem() {
-    results.innerHTML = 'Results for "' + search.value + '"'
+    const status = document.getElementById("status");
+    status.innerHTML = 'Results for "' + search.value.substring(0,25) + (search.value.length > 25 ? '..."' : '"');
 
     var xhr = new XMLHttpRequest();
     var url = "api/Sellers/GetBySearch/";
