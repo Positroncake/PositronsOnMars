@@ -21,13 +21,17 @@ function register() {
         var url = "url/api/Accounts/Register";
         xhr.open("POST", url, true);
         xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.send(JSON.stringify(`"username": ${username.value}, "password": ${password.value}`));
+        xhr.send(JSON.stringify(`{"Username": "${username.value}", "Hash": "${password.value}", "salt": "", "Iterations": 0}`));
         const re = xhr.responseText;
         if (re = "200") {
             window.alert("Account creation successful");
             window.location.href = "./login.html";
-        } else if (re = "403") {
+        } else if (re = "404") {
+            const statusMsg = document.getElementById("status");
             statusMsg.innerHTML = `Incorrect login or password`;
+        }  else if (re = "400") {
+            const statusMsg = document.getElementById("status");
+            statusMsg.innerHTML = `An error please try again later`;
         }
     }
 }
