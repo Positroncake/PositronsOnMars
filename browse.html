@@ -31,18 +31,18 @@
     <main>
         <div class="search">
             <input type="text" placeholder="Search" id="search" class="search-box">
-            <button class="button"><i class="fa fa-search"></i></button>
+            <button class="button" onclick="searchItem()"><i class="fa fa-search"></i></button>
             <a href="./sell.html"><button class="button sell">Sell Item</button></a>
             <hr class="split">
         </div>
         <div class="info">
-            <h4 class="results">No results</h4>
+            <h4 id="results" class="results">No results</h4>
             <div class="dropdown">
-                <button class="dropbtn">Sort by: Newest</button>
+                <button id="sortby" class="dropbtn">Sort by: Newest</button>
                 <div class="dropdown-content">
-                    <a class="item">Newest</a>
-                    <a class="item">Price low to high</a>
-                    <a class="item">Price high to low</a>
+                    <a class="item" onclick="sortBy('Newest')">Newest</a>
+                    <a class="item" onclick="sortBy('Price low to high')">Price low to high</a>
+                    <a class="item" onclick="sortBy('Price high to low')">Price high to low</a>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                     <h5 class="cate" onclick="show('GPU')">GPU</h5>
                     <h5 class="cate" onclick="show('PSU')">PSU</h5>
                     <h5 class="cate" onclick="show('Motherboard')">Motherboard</h5>
-                    <h5 class=q"cate" onclick="show('RAM')">RAM</h5>
+                    <h5 class="cate" onclick="show('RAM')">RAM</h5>
                     <h5 class="cate" onclick="show('Storage')">Storage</h5>
                 </div>
                 <hr class="split">
@@ -116,6 +116,7 @@
     </main>
 
     <script type="text/javascript" src="js/themechanger.js"></script>
+    <script type="text/javascript" src="js/browse.js"></script>
 
 </body>
 

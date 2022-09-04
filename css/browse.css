@@ -39,6 +39,7 @@ h2:first-child {
 
 .search-box {
     border: none;
+    outline: none;
     padding: 0.5rem;
     transition: 200ms;
     margin: 0;
