@@ -21,7 +21,7 @@ public class AccountController : ControllerBase
     /// Step 5: Return an API token.
     /// </summary>
     /// <param name="account">This object stores the requested username and password.</param>
-    /// <returns>Returns an HTTP status code.</returns>
+    /// <returns>Returns an HTTP status code and a string (API token).</returns>
     [HttpPost]
     [Route("Register")]
     public async Task<ActionResult> Register([FromBody] DbObjectAccount account)
@@ -85,7 +85,7 @@ public class AccountController : ControllerBase
     /// Step 5: Generate API token and return.
     /// </summary>
     /// <param name="request">This object stores the user-supplied username and password.</param>
-    /// <returns>Returns an HTTP status code.</returns>
+    /// <returns>Returns an HTTP status code and a string (API token).</returns>
     [HttpPut]
     [Route("Login")]
     public async Task<ActionResult> Login([FromBody] LoginRequest request)
@@ -100,7 +100,7 @@ public class AccountController : ControllerBase
         {
             Username = request.Username
         });
-        if (results.Count is 0) return NotFound();
+        if (results.Count is 0) return Unauthorized();
         DbObjectAccount result = results.First();
 
         // Step 3
