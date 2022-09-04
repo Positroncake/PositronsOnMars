@@ -1,0 +1,187 @@
+body {
+    background-color: var(--secondary);
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+hr {
+    height: 1px;
+    background-color: #cccccc55;
+    border: none;
+    margin: 0;
+}
+
+h2 {
+    font-size: 19px;
+    margin: 0.5rem;
+    margin-left: 3rem;
+    color: var(--primary-text);
+}
+
+h4 {
+    font-size: 17px;
+}
+
+h5 {
+    font-size: 14px;
+    transition: 200ms;
+}
+
+h6 {
+    width: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+h2:first-child {
+    margin-top: 2.9rem;
+}
+
+.search-box {
+    border: none;
+    padding: 0.5rem;
+    transition: 200ms;
+    margin: 0;
+}
+
+.search-box:hover {
+    padding: 0.6rem;
+}
+
+.sell {
+    float: right;
+}
+
+.split {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    margin: 0;
+}
+
+.indent {
+    margin-left: 0.5rem;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    max-width: 10rem;
+    background: #fff;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  .input-box .prefix {
+    font-weight: 300;
+    font-size: 14px;
+    color: #999;
+  }
+
+.list-container {
+    padding-top: 2rem;
+}
+
+.filters {
+    background-color: var(--primary);
+    width: 20%;
+    padding: 1rem;
+    float: left;
+    transition: 200ms;
+}
+
+.filters h5 {
+    color: var(--primary-text);
+    padding: 0;
+    margin: 0;
+}
+
+.items-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
+    float: left;
+    width: 75%;
+    padding-bottom: 2rem;
+}
+
+.item-card {
+    background-color: var(--primary);
+    margin-left: 0.5rem;
+    transition: 200ms;
+}
+
+.info {
+    margin-bottom: 2rem;
+}
+
+.results {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--add-btn);
+    transition: 200ms;
+}
+
+.dropbtn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--btn-idl);
+    font-weight: bold;
+    color: var(--primary-text);
+}
+
+.dropbtn:hover {
+    cursor: context-menu;
+    background-color: var(--btn-hvr);
+}
+
+.dropdown-content .item {
+    background-color: transparent;
+    color: #000;
+    transition: 200ms;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-content .item:hover {
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.rinput {
+    width: 4rem;
+    border: none;
+    outline: none;
+}
+
+.cate {
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.cate:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

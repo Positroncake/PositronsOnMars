@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse</title>
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/browse.css">
 </head>
 
 <body>
@@ -24,6 +27,96 @@
             <span class="slider round"></span>
         </label>
     </div>
+
+    <main>
+        <div class="search">
+            <input type="text" placeholder="Search" id="search" class="search-box">
+            <button class="button"><i class="fa fa-search"></i></button>
+            <a href="./sell.html"><button class="button sell">Sell Item</button></a>
+            <hr class="split">
+        </div>
+        <div class="info">
+            <h4 class="results">No results</h4>
+            <div class="dropdown">
+                <button class="dropbtn">Sort by: Newest</button>
+                <div class="dropdown-content">
+                    <a class="item">Newest</a>
+                    <a class="item">Price low to high</a>
+                    <a class="item">Price high to low</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-container">
+            <div class="filters">
+                <h5>Component (7)</h5>
+                <div class="indent">
+                    <h5 class="cate" onclick="show('CPU')">CPU</h5>
+                    <h5 class="cate" onclick="show('GPU')">GPU</h5>
+                    <h5 class="cate" onclick="show('PSU')">PSU</h5>
+                    <h5 class="cate" onclick="show('Motherboard')">Motherboard</h5>
+                    <h5 class=q"cate" onclick="show('RAM')">RAM</h5>
+                    <h5 class="cate" onclick="show('Storage')">Storage</h5>
+                </div>
+                <hr class="split">
+                <h5>Price</h5>
+                <div class="indent">
+                    <div class="input-box">
+                        <span class="prefix">$</span>
+                        <input type="number" placeholder="min" id="min" class="rinput">
+                        <h6>-</h6>
+                        <span class="prefix">$</span>
+                        <input type="number" placeholder="max" id="max" class="rinput">
+                    </div>
+                </div>
+                <hr class="split">
+                <button class="button">Update Results</button>
+            </div>
+
+            <div class="items-list">
+                <div class="item-card">
+                    <div class="left">
+                        <img src="" alt="Item Image">
+                    </div>
+                    <div class="right">
+                        <h5>Item Name</h5>
+                        <h6>Seller</h6>
+                        <h6>Item Description</h6>
+                        <h7>Date</h7>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="left">
+                        <img src="" alt="Item Image">
+                    </div>
+                    <div class="right">
+                        <h5>Item Name</h5>
+                        <h6>Seller</h6>
+                        <h6>Item Description</h6>
+                        <h7>Date</h7>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="left">
+                        <img src="" alt="Item Image">
+                    </div>
+                    <div class="right">
+                        <h5>Item Name</h5>
+                        <h6>Seller</h6>
+                        <h6>Item Description</h6>
+                        <h7>Date</h7>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="text/javascript" src="js/themechanger.js"></script>
+
 </body>
 
 </html>
