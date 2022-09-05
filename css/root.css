@@ -139,14 +139,14 @@ html {
     display: none;
 }
 
-.s {
+.success {
     color: var(--success);
 }
 
-.w {
+.warning {
     color: var(--warning);
 }
 
-.e {
+.error {
     color: var(--error);
 }
